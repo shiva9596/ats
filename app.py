@@ -7,12 +7,25 @@ import os
 import io
 from PIL import Image
 import pdf2image
-# Verify Poppler installation
-print("Checking Poppler path...")
-os.system("which pdfinfo")
 
-# Explicitly set the Poppler path for Hugging Face Spaces (Linux)
-Poppler_Path = "/usr/bin"  # This is the default path for Hugging Face Spaces
+
+import os
+import subprocess
+
+# Check if Poppler is installed
+poppler_check = subprocess.run(["which", "pdfinfo"], capture_output=True, text=True)
+
+if poppler_check.stdout.strip():
+    print("✅ Poppler is installed at:", poppler_check.stdout.strip())
+else:
+    print("❌ Poppler is NOT installed! You need to install poppler-utils.")
+
+# Explicitly set the Poppler path for Hugging Face Spaces
+Poppler_Path = "/usr/bin"  # This is the default path for Linux
+
+def input_pdf_setup(uploaded_file):
+    images = pdf2image.convert_from_bytes(uploaded_file.read(), poppler_path=Poppler_Path)
+    return images
 
 import google.generativeai as genai
 
