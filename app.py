@@ -7,7 +7,12 @@ import os
 import io
 from PIL import Image
 import pdf2image
-Poppler_Path = "/usr/bin"
+# Verify Poppler installation
+print("Checking Poppler path...")
+os.system("which pdfinfo")
+
+# Explicitly set the Poppler path for Hugging Face Spaces (Linux)
+Poppler_Path = "/usr/bin"  # This is the default path for Hugging Face Spaces
 
 import google.generativeai as genai
 
