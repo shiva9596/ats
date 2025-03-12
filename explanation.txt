@@ -1,0 +1,8 @@
+FUnctionalities
+1. field to put my JD
+2. Upload the Pdf
+3. Convert pdf to image make some processing for it and then shift to next step
+then goes to Google Gemini pro model based on different prompts
+4. Prompt Template [multiple prompts] we also need to create prompt template
+
+and we need to take the jd
