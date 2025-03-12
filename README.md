@@ -15,3 +15,9 @@ conda create -n atsbot python=3.10 -y
 ```bash
 pip install -r requirements.txt
 ```
+
+
+### Step -03 Create new file named app.py
+```bash
+touch app.py
+```
