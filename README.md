@@ -32,3 +32,4 @@ touch app.py
 streamlit run app.py
 ```
 ### after running the above file it should now redirect to the browser stating the following localhost address: http://localhost:8501
+### now you can make all necessary changes to the Resume as per JD
