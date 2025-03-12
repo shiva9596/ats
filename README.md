@@ -23,5 +23,5 @@ touch app.py
 ```
 
 ### As a step 4 we need to make sure to create a new Google API Key by visiting to the official site: (https://aistudio.google.com/apikey)
-### writting all code requireemnts in app.py
-### Key step: for few users there might be a issue faced by poppeyes then in that case download the official package and give the path in environments
+### in next stpe write all code requireemnts in app.py
+### Key step: for few users there might be a issue faced by poppeyes then in that case download the official and latest package of [popplers](https://github.com/oschwartz10612/poppler-windows/releases) from and give the path in environments
