@@ -7,7 +7,7 @@ import os
 import io
 from PIL import Image
 import pdf2image
-Poppler_Path= r"C:\Users\91970\Downloads\Release-24.08.0-0\poppler-24.08.0\Library\bin"
+Poppler_Path = "/usr/bin"
 
 import google.generativeai as genai
 
